@@ -70,5 +70,7 @@ function classificaçãoEtaria (idade){
 
 function areaRetangulo(largura, altura) {
     let resultado = largura * altura
-    log
+    console.log("a area do seu retangulo é "+ resultado +"cm²");
+ 
+    
 }
