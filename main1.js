@@ -74,3 +74,103 @@ function areaRetangulo(largura, altura) {
  
     
 }
+
+// FUNCAO 06
+
+// Crie uma função que receba um número e realize uma contagem regressiva 
+// até chegar a zero, utilizando um laço de repetição
+
+function contagemRegressiva (numero){
+    for ( let i = numero; i >= 0; i = i-1 ){
+        console.log(i);
+        
+    }
+}
+
+// FUNCAO 07
+
+// Crie uma função que receba o salário de um funcionário e aplique um 
+// aumento de acordo com as seguintes regras: salários menores que R$ 1.000 
+// recebem 20% de aumento, entre R$ 1.000 e R$ 2.000 recebem 15% e acima 
+// de R$ 2.000 recebem 10%. Ao final, exiba o novo salário.
+
+function aumentoSalario(salario) {
+    if ( salario <= 1000 ){
+        let resultado = salario * 0.20
+        console.log("Seu salario recebeu um aumento de:" + resultado);
+    }else if ( salario >= 1000 && salario <= 2000) {
+        let resultado = salario * 0.15
+        console.log("Seu salario recebeu um aumento de:" + resultado);
+    }else if ( salario > 2000){
+        let resultado = salario * 0.10
+        console.log("Seu salario recebeu um aumento de:" + resultado);
+    }else{
+        console.log("informe seu salario correto");
+        
+    }
+
+    
+    
+}
+
+// FUNCAO 08
+
+// 8. Crie uma função que receba um número e verifique se ele é par ou ímpar. Ao 
+// final, exiba uma mensagem informando o resultado.
+
+function imparPar(numero) {
+    if ( numero % 2 == 0){
+        console.log("Seu numero é par:" + numero);
+        
+    } else{
+        console.log("Seu numero é impar:" + numero);
+        
+    }
+    
+}
+
+// FUNCAO 09 
+
+// 9. Crie uma função que receba uma temperatura em Celsius e converta para 
+// Fahrenheit. A função também deverá receber uma informação opcional para 
+// definir se deseja realizar a conversão inversa, de Fahrenheit para Celsius. 
+// Caso essa informação não seja fornecida, deverá realizar a conversão 
+// padrão de Celsius para Fahrenheit. 
+
+function fahCels(temperatura,numero) {
+
+    if ( temperatura == "Fah"){
+        let resultado = ( numero * 1.8) + 32
+        console.log(resultado);
+        
+    } else if ( temperatura == "Cel"){
+        let resultado = ( numero - 32) / 1.8
+        console.log((resultado));
+        
+    }else{
+        console.log("Escolha uma das opção");
+        
+    }
+    
+}
+
+
+
+// FUNCAO 10
+
+// Crie uma função que receba três números representando os lados de 
+// um triângulo e verifique se ele é equilátero, isósceles ou escaleno. 
+
+function triangulo(numero1, numero2, numero3){
+    if (numero1 == numero2 && numero2 == numero3 && numero1 == numero3){
+        console.log("seu triangulo é equilatero");
+        
+    }else if (numero1 != numero2 && numero2 != numero3 && numero1 && numero3){
+        console.log("Seu triangulo é escaleno");
+        
+    }else{
+        console.log("Seu triangulo é isóscele ");
+        
+    }
+}
+
